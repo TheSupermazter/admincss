@@ -1,0 +1,182 @@
+body {
+    background-image: url(../img/bg-gradient.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #104050;
+    font-family: "Helvetica Neue", "helvetica", "arial";
+}
+
+.login h1 a {
+    background-image: url(../img/primaire-logo-wit.svg) !important;
+    background-size: 100% !important;
+    width: 150px !important;
+}
+
+.login form {
+    padding: 45px 35px;
+}
+
+a {
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+.login input[type=text],
+.login input[type=password] {
+    font-size: 15px;
+    padding: 0 10px;
+    box-shadow: none;
+    border: 1px solid #7e8993;
+}
+
+.wp-core-ui .button-primary {
+    border-color: #cf0;
+    background: #cf0;
+    font-size: 14px !important;
+    line-height: 1.2;
+    min-height: 2.5rem;
+    color: #104050;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 6px 23px !important;
+    width: 100%;
+    text-align: left;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.wp-core-ui .button-primary:hover {
+    color: #104050;
+    background: #a3cc00;
+    border: none;
+}
+
+.wp-core-ui .button-primary:focus,
+.login h1 a:focus {
+    box-shadow: none;
+    background: #a3cc00;
+}
+
+.login form .forgetmenot {
+    float: none;
+    display: inline-block;
+    margin-bottom: 20px !important;
+}
+
+.login .button-primary {
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.login .privacy-policy-page-link {
+    margin: 6px 0;
+    display: block;
+}
+
+.privacy-policy-link {
+    text-decoration: none;
+    color: #555d66;
+}
+
+.login .message {
+    border-left: 4px solid #cf0;
+    border-radius: 10px;
+}
+
+.login form {
+    border-radius: 10px;
+    background-color: #f3f5f6;
+    position: relative;
+    overflow: visible;
+}
+
+.login form .input:focus,
+.login input[type="text"]:focus,
+input[type=checkbox]:focus {
+    box-shadow: none;
+    border: 1px solid #071b22 !important;
+}
+
+.login #loginform {
+    margin-bottom: 5rem;
+}
+
+.login #loginform::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #cf0;
+    bottom: -35px;
+    right: -35px;
+    border-radius: 150px;
+    transition: all 1s ease;
+    z-index: -1;
+}
+
+.login #loginform:hover::after {
+    width: 180px;
+    height: 180px;
+    right: -50px;
+    bottom: -50px;
+}
+
+
+#backtoblog {
+    margin: 10px 0;
+}
+
+#backtoblog,
+#nav {
+    text-align: center;
+}
+
+.login #backtoblog a,
+.login #nav a,
+.login .privacy-policy-page-link a,
+.language-switcher label .dashicons {
+    color: #fff;
+}
+
+input[type=checkbox] {
+    height: 16px !important;
+    width: 15px !important;
+    box-shadow: none;
+    border: 1px solid #7e8993;
+}
+
+input[type=checkbox]:checked::before {
+    width: 19px !important;
+    height: 18px !important;
+    margin: -2px 0px 0px -3px !important;
+}
+
+.dashicons-visibility:before,
+.dashicons-hidden:before {
+    color: #071b22;
+}
+
+.dashicons {
+    margin-top: 0px;
+}
+
+.interim-login.login h1 a {
+    width: 140px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.wp-core-ui .button {
+    color: #071b22;
+    border-color: #071b22;
+}
+
+.wp-core-ui .button:hover {
+    color: #071b22;
+}
