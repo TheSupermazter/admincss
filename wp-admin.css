@@ -538,5 +538,6 @@ html::before {
     .language-switcher .button {
         display: inline-block;
         margin: 5px;
+        margin-top: 20px;
     }
 }
