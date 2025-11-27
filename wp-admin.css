@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 body {
-    background: #273C4F;
+    background: linear-gradient(to bottom, #273C4F 50%, #2B4457 50%);
     background-color: #273C4F;
     font-family: "PT Sans", sans-serif;
+    min-height: 100vh;
 }
 
 .login h1 a {
-    background-color: #FF4459 !important;
-    background-image: none !important;
-    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="black"/></svg>') no-repeat center / contain !important;
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="black"/></svg>') no-repeat center / contain !important;
-    background-size: 100% !important;
-    width: 150px !important;
+    background-image: url(https://mademarketing.nl/wp-content/uploads/2019/08/made-marketing-logo.png) !important;
+    background-size: contain !important;
+    background-position: center !important;
+    width: 200px !important;
+    height: 100px !important;
+    background-color: transparent !important;
 }
 
 .login form {
@@ -30,8 +31,8 @@ a:hover {
 
 .login input[type=text],
 .login input[type=password] {
-    font-size: 15px;
-    padding: 0 10px;
+    font-size: 16px;
+    padding: 5px 10px;
     box-shadow: none;
     border: 1px solid #7e8993;
     background-color: #1e2e3d;
@@ -49,12 +50,13 @@ a:hover {
     border-radius: 4px;
     padding: 6px 23px !important;
     width: 100%;
-    text-align: left;
+    text-align: center;
     transition: all 0.5s ease;
+    text-transform: uppercase;
 }
 
 .wp-core-ui .button-primary:hover {
-    color: #fff;
+    color: #fff !important;
     background: #FF4459;
     border: 2px solid #FF4459;
 }
@@ -118,16 +120,7 @@ a:hover {
 }
 
 .login #loginform::after {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #FF4459;
-    bottom: -35px;
-    right: -35px;
-    border-radius: 150px;
-    transition: all 1s ease;
-    z-index: -1;
+    display: none;
 }
 
 .login #loginform:hover::after {
