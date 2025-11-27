@@ -265,7 +265,6 @@ input[type=checkbox]:checked::before {
 body::before,
 body::after,
 #login::before,
-#login::after,
 .language-switcher::before,
 .language-switcher::after,
 .login h1::before,
