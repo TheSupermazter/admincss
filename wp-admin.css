@@ -433,3 +433,78 @@ html::before {
     z-index: -1;
     animation: rocket-enter 2s ease-out forwards, rocket-shake 3s ease-in-out 2s infinite;
 }
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+
+    /* Hide heavy animations and fixed elements */
+    #login::after,
+    body::before,
+    body::after,
+    #login::before,
+    html::before,
+    .language-switcher::before,
+    .language-switcher::after,
+    .login h1::before,
+    .login h1::after,
+    .login form::before,
+    .login form::after {
+        display: none !important;
+    }
+
+    /* Reset Body Background */
+    body {
+        background: #273C4F;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 20px;
+    }
+
+    /* Adjust Login Container */
+    .login #login {
+        padding: 20px 10px !important;
+        width: 100% !important;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    /* Adjust Logo */
+    .login h1 a {
+        width: 100% !important;
+        height: 80px !important;
+        background-size: contain !important;
+        margin-bottom: 20px;
+    }
+
+    /* Adjust Form */
+    .login form {
+        padding: 30px 20px;
+        margin-top: 0;
+        border-radius: 15px;
+    }
+
+    /* Adjust Inputs */
+    .login input[type=text],
+    .login input[type=password] {
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+        padding: 10px;
+    }
+
+    /* Adjust Buttons */
+    .wp-core-ui .button-primary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Language Switcher */
+    .language-switcher {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .language-switcher .button {
+        display: inline-block;
+        margin: 5px;
+    }
+}
