@@ -248,6 +248,16 @@ input[type=checkbox]:checked::before {
     border-width: 2px;
 }
 
+.wp-core-ui .button.wp-hide-pw:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.wp-core-ui .button.wp-hide-pw:focus .dashicons {
+    color: #FF4459 !important;
+}
+
 /* Animated Stars */
 @keyframes star-enter {
     0% {
