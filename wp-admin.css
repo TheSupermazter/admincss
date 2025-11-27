@@ -265,6 +265,7 @@ input[type=checkbox]:checked::before {
 body::before,
 body::after,
 #login::before,
+html::before,
 .language-switcher::before,
 .language-switcher::after,
 .login h1::before,
@@ -283,25 +284,25 @@ body::after,
     height: 1em;
 }
 
-/* SVG 1: Star (5-point) */
-body::before,
-#login::before,
+/* SVG 1: Star (5-point) - 5 items */
+body::after,
 .language-switcher::before,
-.login h1::before,
-.login form::before {
+.login h1::after,
+.login form::before,
+html::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z'/%3E%3C/svg%3E");
 }
 
-/* SVG 2: Sparkle (4-point) */
-body::after,
-#login::after,
+/* SVG 2: Sparkle (4-point) - 5 items */
+body::before,
+#login::before,
 .language-switcher::after,
-.login h1::after,
+.login h1::before,
 .login form::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z'/%3E%3C/svg%3E");
 }
 
-/* Star 1 (Small - Star) */
+/* Star 1 (Small - Sparkle) */
 body::before {
     top: 10%;
     left: 5%;
@@ -309,7 +310,7 @@ body::before {
     animation-delay: 0.1s;
 }
 
-/* Star 2 (Medium - Sparkle) */
+/* Star 2 (Medium - Star) */
 body::after {
     top: 20%;
     right: 10%;
@@ -317,7 +318,7 @@ body::after {
     animation-delay: 0.3s;
 }
 
-/* Star 3 (Medium - Star) */
+/* Star 3 (Medium - Sparkle) */
 #login::before {
     bottom: 15%;
     left: 15%;
@@ -325,19 +326,8 @@ body::after {
     animation-delay: 0.5s;
 }
 
-/* Star 4 (Medium - Sparkle) -> Moved to html::before */
+/* Star 4 (Medium - Star) */
 html::before {
-    content: "";
-    position: fixed;
-    z-index: -1;
-    animation: star-enter 1s ease-out forwards;
-    opacity: 0;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 1em;
-    height: 1em;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z'/%3E%3C/svg%3E");
     bottom: 25%;
     right: 20%;
     font-size: 35px;
