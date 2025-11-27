@@ -450,8 +450,7 @@ html::before {
 .login form {
     overflow: hidden;
     position: relative;
-    background: #fff;
-    /* Ensure background is white for waves */
+    /* background: #fff; Removed to restore original background */
     z-index: 1;
     /* Ensure form content is above waves */
 }
@@ -472,15 +471,15 @@ html::before {
 .login form::before {
     left: 40%;
     bottom: -130%;
-    background-color: rgba(69, 105, 144, 0.15);
-    /* $blueQueen */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light grey wave 1 */
     animation: waves 6s infinite linear;
 }
 
 .login form::after {
     left: 35%;
     bottom: -125%;
-    background-color: rgba(2, 128, 144, 0.2);
-    /* $greenSeaweed */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Light grey wave 2 */
     animation: waves 7s infinite linear;
 }
