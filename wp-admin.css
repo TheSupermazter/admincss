@@ -182,6 +182,28 @@ a:hover {
     height: 40px;
 }
 
+.language-switcher .button {
+    background: transparent;
+    border: 2px solid #FF4459;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    height: 40px !important;
+    line-height: 1;
+    padding: 0 20px !important;
+    font-size: 14px !important;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.language-switcher .button:hover {
+    color: #fff !important;
+    background: #FF4459;
+    border: 2px solid #FF4459;
+}
+
 input[type=checkbox] {
     height: 16px !important;
     width: 15px !important;
