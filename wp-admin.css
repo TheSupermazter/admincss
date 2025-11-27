@@ -138,7 +138,7 @@ a:hover {
 .login input[type="text"]:focus,
 .login input[type=checkbox]:focus {
     box-shadow: none;
-    border: 1px solid #FF4459 !important;
+    border: 2px solid #FF4459 !important;
 }
 
 .login #loginform {
