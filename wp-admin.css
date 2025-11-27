@@ -309,11 +309,11 @@ body::before {
     animation-delay: 0.1s;
 }
 
-/* Star 2 (Large - Sparkle) */
+/* Star 2 (Medium - Sparkle) */
 body::after {
     top: 20%;
     right: 10%;
-    font-size: 55px;
+    font-size: 32px;
     animation-delay: 0.3s;
 }
 
@@ -321,15 +321,15 @@ body::after {
 #login::before {
     bottom: 15%;
     left: 15%;
-    font-size: 32px;
+    font-size: 28px;
     animation-delay: 0.5s;
 }
 
-/* Star 4 (Large - Sparkle) */
+/* Star 4 (Medium - Sparkle) */
 #login::after {
     bottom: 25%;
     right: 20%;
-    font-size: 50px;
+    font-size: 35px;
     animation-delay: 0.7s;
 }
 
@@ -345,7 +345,7 @@ body::after {
 .language-switcher::after {
     top: 5%;
     right: 35%;
-    font-size: 36px;
+    font-size: 30px;
     animation-delay: 1.1s;
 }
 
@@ -361,15 +361,15 @@ body::after {
 .login h1::after {
     top: 60%;
     right: 5%;
-    font-size: 28px;
+    font-size: 25px;
     animation-delay: 1.5s;
 }
 
-/* Star 9 (Large - Star) */
+/* Star 9 (Medium - Star) */
 .login form::before {
     bottom: 5%;
     left: 45%;
-    font-size: 45px;
+    font-size: 34px;
     animation-delay: 1.7s;
 }
 
@@ -377,6 +377,6 @@ body::after {
 .login form::after {
     top: 35%;
     left: 25%;
-    font-size: 30px;
+    font-size: 28px;
     animation-delay: 1.9s;
 }
