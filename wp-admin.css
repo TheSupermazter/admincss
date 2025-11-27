@@ -408,7 +408,7 @@ html::before {
 #login::after {
     content: "";
     position: absolute;
-    right: -170px;
+    right: -180px;
     /* More to the left (visible) */
     bottom: auto;
     /* Higher up */
