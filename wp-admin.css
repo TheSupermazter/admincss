@@ -57,7 +57,7 @@ a:hover {
 
 .wp-core-ui .button-primary {
     background: transparent;
-    border: 2px solid #FF4459;
+    border: 4px solid #FF4459;
     font-size: 18px !important;
     line-height: 1.2;
     min-height: 2.5rem;
@@ -74,7 +74,7 @@ a:hover {
 .wp-core-ui .button-primary:hover {
     color: #fff !important;
     background: #FF4459;
-    border: 2px solid #FF4459;
+    border: 4px solid #FF4459;
 }
 
 .wp-core-ui .button-primary:focus,
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .login form {
-    border-radius: 10px;
+    border-radius: 25px;
     background-color: #324a5e;
     position: relative;
     overflow: visible;
@@ -185,7 +185,7 @@ a:hover {
 
 .language-switcher .button {
     background: transparent;
-    border: 2px solid #FF4459;
+    border: 4px solid #FF4459;
     color: #fff;
     font-weight: 600;
     border-radius: 4px;
@@ -202,7 +202,7 @@ a:hover {
 .language-switcher .button:hover {
     color: #fff !important;
     background: #FF4459;
-    border: 2px solid #FF4459;
+    border: 4px solid #FF4459;
 }
 
 input[type=checkbox] {
