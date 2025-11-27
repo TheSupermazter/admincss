@@ -124,7 +124,7 @@ a:hover {
     overflow: visible;
     color: #fff;
     border-width: 0px;
-    box-shadow: rgba(0, 0, 0, 0.131) 0px 3px 8px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .login label {
