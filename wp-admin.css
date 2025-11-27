@@ -5,6 +5,14 @@ body {
     background-color: #273C4F;
     font-family: "PT Sans", sans-serif;
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login #login {
+    padding: 0 !important;
+    position: relative;
 }
 
 .login h1 a {
