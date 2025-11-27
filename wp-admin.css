@@ -236,12 +236,14 @@ input[type=checkbox]:checked::before {
 .wp-core-ui .button {
     color: #fff;
     border-color: #FF4459;
+    border-width: 2px;
     background: transparent;
 }
 
 .wp-core-ui .button:hover {
     color: #FF4459;
     border-color: #FF4459;
+    border-width: 2px;
 }
 
 /* Animated Stars */
