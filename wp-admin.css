@@ -257,9 +257,9 @@ input[type=checkbox]:checked::before {
     background: transparent !important;
 }
 
-.wp-core-ui .button.wp-hide-pw:focus .dashicons,
-.wp-core-ui .button.wp-hide-pw:hover .dashicons,
-.wp-core-ui .button.wp-hide-pw:active .dashicons {
+.wp-core-ui .button.wp-hide-pw:focus .dashicons::before,
+.wp-core-ui .button.wp-hide-pw:hover .dashicons::before,
+.wp-core-ui .button.wp-hide-pw:active .dashicons::before {
     color: #FF4459 !important;
 }
 
