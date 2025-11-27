@@ -238,7 +238,7 @@ input[type=checkbox]:checked::before {
 .wp-core-ui .button {
     color: #fff;
     border-color: #FF4459;
-    border-width: 3px;
+    border-width: 2px;
     background: transparent;
 }
 
