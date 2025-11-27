@@ -136,8 +136,7 @@ a:hover {
 }
 
 .login form .input:focus,
-.login input[type="text"]:focus,
-.login input[type=checkbox]:focus {
+.login input[type="text"]:focus {
     box-shadow: none;
     border: 2px solid #FF4459 !important;
 }
@@ -208,12 +207,16 @@ a:hover {
     border: 4px solid #FF4459;
 }
 
-input[type=checkbox] {
+input[type=checkbox],
+input[type=checkbox]:hover,
+input[type=checkbox]:focus,
+input[type=checkbox]:active {
     height: 16px !important;
     width: 15px !important;
     box-shadow: none;
     border: none !important;
     background-color: #1e2e3d;
+    outline: none !important;
 }
 
 input[type=checkbox]:checked::before {
