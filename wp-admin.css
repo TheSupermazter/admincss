@@ -14,6 +14,7 @@ body {
 .login #login {
     padding: 0 !important;
     position: relative;
+    overflow: visible !important;
 }
 
 .login h1 a {
