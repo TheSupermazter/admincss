@@ -410,7 +410,7 @@ html::before {
     position: absolute;
     right: -120px;
     /* More to the left (visible) */
-    bottom: 10%;
+    bottom: 50%;
     /* Higher up */
     top: auto;
     height: 80%;
