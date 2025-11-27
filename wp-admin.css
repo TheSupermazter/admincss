@@ -212,7 +212,8 @@ input[type=checkbox] {
     height: 16px !important;
     width: 15px !important;
     box-shadow: none;
-    border: 1px solid #7e8993;
+    border: none !important;
+    background-color: #1e2e3d;
 }
 
 input[type=checkbox]:checked::before {
