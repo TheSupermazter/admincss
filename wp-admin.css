@@ -88,6 +88,11 @@ a:hover {
     margin-bottom: 20px !important;
 }
 
+.login .forgetmenot label {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+}
+
 .login .button-primary {
     float: none;
     display: inline-block;
@@ -163,6 +168,18 @@ a:hover {
 .login .privacy-policy-page-link a,
 .language-switcher label .dashicons {
     color: #fff;
+    font-size: 16px;
+}
+
+#language-switcher-locales {
+    font-size: 16px;
+    padding: 5px 10px;
+    box-shadow: none;
+    border: 1px solid #7e8993;
+    background-color: #1e2e3d;
+    color: #fff;
+    border-radius: 4px;
+    height: 40px;
 }
 
 input[type=checkbox] {
