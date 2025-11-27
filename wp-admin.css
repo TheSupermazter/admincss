@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 body {
-    background-image: url(../img/bg-gradient.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #104050;
-    font-family: "Helvetica Neue", "helvetica", "arial";
+    background: #273C4F;
+    background-color: #273C4F;
+    font-family: "PT Sans", sans-serif;
 }
 
 .login h1 a {
-    background-image: url(../img/primaire-logo-wit.svg) !important;
+    background-color: #FF4459 !important;
+    background-image: none !important;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="black"/></svg>') no-repeat center / contain !important;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="black"/></svg>') no-repeat center / contain !important;
     background-size: 100% !important;
     width: 150px !important;
 }
@@ -22,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: #fff !important;
+    color: #FF4459 !important;
     text-decoration: underline !important;
 }
 
@@ -32,34 +34,35 @@ a:hover {
     padding: 0 10px;
     box-shadow: none;
     border: 1px solid #7e8993;
+    background-color: #1e2e3d;
+    color: #fff;
 }
 
 .wp-core-ui .button-primary {
-    border-color: #cf0;
-    background: #cf0;
+    background: transparent;
+    border: 2px solid #FF4459;
     font-size: 14px !important;
     line-height: 1.2;
     min-height: 2.5rem;
-    color: #104050;
+    color: #fff;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 4px;
     padding: 6px 23px !important;
     width: 100%;
     text-align: left;
     transition: all 0.5s ease;
-    border: none;
 }
 
 .wp-core-ui .button-primary:hover {
-    color: #104050;
-    background: #a3cc00;
-    border: none;
+    color: #fff;
+    background: #FF4459;
+    border: 2px solid #FF4459;
 }
 
 .wp-core-ui .button-primary:focus,
 .login h1 a:focus {
     box-shadow: none;
-    background: #a3cc00;
+    background: #FF4459;
 }
 
 .login form .forgetmenot {
@@ -81,26 +84,33 @@ a:hover {
 
 .privacy-policy-link {
     text-decoration: none;
-    color: #555d66;
+    color: #a0a5aa;
 }
 
 .login .message {
-    border-left: 4px solid #cf0;
+    border-left: 4px solid #FF4459;
     border-radius: 10px;
+    background-color: #324a5e;
+    color: #fff;
 }
 
 .login form {
     border-radius: 10px;
-    background-color: #f3f5f6;
+    background-color: #324a5e;
     position: relative;
     overflow: visible;
+    color: #fff;
+}
+
+.login label {
+    color: #fff;
 }
 
 .login form .input:focus,
 .login input[type="text"]:focus,
-input[type=checkbox]:focus {
+.login input[type=checkbox]:focus {
     box-shadow: none;
-    border: 1px solid #071b22 !important;
+    border: 1px solid #FF4459 !important;
 }
 
 .login #loginform {
@@ -112,7 +122,7 @@ input[type=checkbox]:focus {
     position: absolute;
     width: 150px;
     height: 150px;
-    border: 3px solid #cf0;
+    border: 3px solid #FF4459;
     bottom: -35px;
     right: -35px;
     border-radius: 150px;
@@ -159,7 +169,7 @@ input[type=checkbox]:checked::before {
 
 .dashicons-visibility:before,
 .dashicons-hidden:before {
-    color: #071b22;
+    color: #FF4459;
 }
 
 .dashicons {
@@ -173,10 +183,12 @@ input[type=checkbox]:checked::before {
 }
 
 .wp-core-ui .button {
-    color: #071b22;
-    border-color: #071b22;
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
 }
 
 .wp-core-ui .button:hover {
-    color: #071b22;
+    color: #FF4459;
+    border-color: #FF4459;
 }
