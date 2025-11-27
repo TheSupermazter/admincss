@@ -248,13 +248,18 @@ input[type=checkbox]:checked::before {
     border-width: 2px;
 }
 
-.wp-core-ui .button.wp-hide-pw:focus {
+.wp-core-ui .button.wp-hide-pw:focus,
+.wp-core-ui .button.wp-hide-pw:hover,
+.wp-core-ui .button.wp-hide-pw:active {
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
+    background: transparent !important;
 }
 
-.wp-core-ui .button.wp-hide-pw:focus .dashicons {
+.wp-core-ui .button.wp-hide-pw:focus .dashicons,
+.wp-core-ui .button.wp-hide-pw:hover .dashicons,
+.wp-core-ui .button.wp-hide-pw:active .dashicons {
     color: #FF4459 !important;
 }
 
