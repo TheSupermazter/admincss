@@ -340,7 +340,7 @@ html::before {
 
 /* Star 5 (Small - Star) */
 .language-switcher::before {
-    top: 50%;
+    top: 54%;
     left: 8%;
     font-size: 22px;
     animation-delay: 0.9s;
