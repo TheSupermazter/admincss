@@ -142,7 +142,7 @@ a:hover {
 }
 
 .login #loginform {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .login #loginform::after {
