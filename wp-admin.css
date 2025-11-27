@@ -271,18 +271,37 @@ body::after,
 .login h1::after,
 .login form::before,
 .login form::after {
-    content: "+";
+    content: "";
     position: fixed;
-    color: rgba(255, 255, 255, 0.3);
-    font-family: sans-serif;
-    font-weight: 100;
     z-index: -1;
     animation: star-enter 1s ease-out forwards;
     opacity: 0;
     pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1em;
+    height: 1em;
 }
 
-/* Star 1 (Small) */
+/* SVG 1: Star (5-point) */
+body::before,
+#login::before,
+.language-switcher::before,
+.login h1::before,
+.login form::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z'/%3E%3C/svg%3E");
+}
+
+/* SVG 2: Sparkle (4-point) */
+body::after,
+#login::after,
+.language-switcher::after,
+.login h1::after,
+.login form::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z'/%3E%3C/svg%3E");
+}
+
+/* Star 1 (Small - Star) */
 body::before {
     top: 10%;
     left: 5%;
@@ -290,7 +309,7 @@ body::before {
     animation-delay: 0.1s;
 }
 
-/* Star 2 (Large) */
+/* Star 2 (Large - Sparkle) */
 body::after {
     top: 20%;
     right: 10%;
@@ -298,7 +317,7 @@ body::after {
     animation-delay: 0.3s;
 }
 
-/* Star 3 (Medium) */
+/* Star 3 (Medium - Star) */
 #login::before {
     bottom: 15%;
     left: 15%;
@@ -306,7 +325,7 @@ body::after {
     animation-delay: 0.5s;
 }
 
-/* Star 4 (Large) */
+/* Star 4 (Large - Sparkle) */
 #login::after {
     bottom: 25%;
     right: 20%;
@@ -314,7 +333,7 @@ body::after {
     animation-delay: 0.7s;
 }
 
-/* Star 5 (Small) */
+/* Star 5 (Small - Star) */
 .language-switcher::before {
     top: 50%;
     left: 8%;
@@ -322,7 +341,7 @@ body::after {
     animation-delay: 0.9s;
 }
 
-/* Star 6 (Medium) */
+/* Star 6 (Medium - Sparkle) */
 .language-switcher::after {
     top: 5%;
     right: 35%;
@@ -330,7 +349,7 @@ body::after {
     animation-delay: 1.1s;
 }
 
-/* Star 7 (Small) */
+/* Star 7 (Small - Star) */
 .login h1::before {
     top: 80%;
     left: 30%;
@@ -338,7 +357,7 @@ body::after {
     animation-delay: 1.3s;
 }
 
-/* Star 8 (Medium) */
+/* Star 8 (Medium - Sparkle) */
 .login h1::after {
     top: 60%;
     right: 5%;
@@ -346,7 +365,7 @@ body::after {
     animation-delay: 1.5s;
 }
 
-/* Star 9 (Large) */
+/* Star 9 (Large - Star) */
 .login form::before {
     bottom: 5%;
     left: 45%;
@@ -354,7 +373,7 @@ body::after {
     animation-delay: 1.7s;
 }
 
-/* Star 10 (Medium) */
+/* Star 10 (Medium - Sparkle) */
 .login form::after {
     top: 35%;
     left: 25%;
