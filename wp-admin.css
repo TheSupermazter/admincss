@@ -268,7 +268,9 @@ body::after,
 .language-switcher::before,
 .language-switcher::after,
 .login h1::before,
-.login h1::after {
+.login h1::after,
+.login form::before,
+.login form::after {
     content: "";
     position: fixed;
     z-index: -1;
@@ -285,7 +287,8 @@ body::after,
 body::before,
 #login::before,
 .language-switcher::before,
-.login h1::before {
+.login h1::before,
+.login form::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z'/%3E%3C/svg%3E");
 }
 
@@ -293,7 +296,8 @@ body::before,
 body::after,
 #login::after,
 .language-switcher::after,
-.login h1::after {
+.login h1::after,
+.login form::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' fill-opacity='0.3'%3E%3Cpath d='M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z'/%3E%3C/svg%3E");
 }
 
@@ -434,52 +438,4 @@ html::before {
     background-repeat: no-repeat !important;
     z-index: -1;
     animation: rocket-enter 2s ease-out forwards, rocket-shake 3s ease-in-out 2s infinite;
-}
-
-/* Wave Animation */
-@keyframes waves {
-    from {
-        transform: rotate(0);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.login form {
-    overflow: hidden;
-    position: relative;
-    /* background: #fff; Removed to restore original background */
-    z-index: 1;
-    /* Ensure form content is above waves */
-}
-
-.login form::before,
-.login form::after {
-    content: '';
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border-top-left-radius: 40%;
-    border-top-right-radius: 45%;
-    border-bottom-left-radius: 35%;
-    border-bottom-right-radius: 40%;
-    z-index: -1;
-}
-
-.login form::before {
-    left: 40%;
-    bottom: -130%;
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Light grey wave 1 */
-    animation: waves 6s infinite linear;
-}
-
-.login form::after {
-    left: 35%;
-    bottom: -125%;
-    background-color: rgba(255, 255, 255, 0.2);
-    /* Light grey wave 2 */
-    animation: waves 7s infinite linear;
 }
