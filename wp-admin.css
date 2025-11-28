@@ -30,8 +30,8 @@ body {
     background-size: contain !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    width: 80% !important;
-    height: 100px !important;
+    width: 95% !important;
+    height: 120px !important;
     background-color: transparent !important;
     transition: all 0.5s ease;
 }
